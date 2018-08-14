@@ -54,45 +54,11 @@
         },
         chart: {
           polar: true,
-          type: 'area',
-//           backgroundColor: {
-//             linearGradient: { x1: 0, y1: 0, x2: 1, y2: 1 },
-//             stops: [
-//                 [0, '#A0DEF5'],
-//                 [1, '#328CAD']
-//             ]
-//           },
-          style: {
-            fontFamily: 'helvetica'
-          },    
-          plotBorderColor: '#FA6300'
+          type: 'line'
         },
-        title: {
-          text: config.chartName
-
-          style: {
-              color: '#000000',
-              textTransform: 'title-case',
-              fontSize: '20px'
-          },
-          x: -50
-        },
-
-        pane: {
-            size: '70%'
-        },
-
+        title: {text: config.chartName},
         xAxis: {
           categories: xCategories,
-          tickmarkPlacement: 'on',
-          lineWidth: 0,
-          labels: {
-            style: {
-                color: '#2A333C',
-                fontSize: '14px',
-                font: 'open-sans'
-            }
-           }
         },
         yAxis: {
           gridLineInterpolation: 'polygon',
