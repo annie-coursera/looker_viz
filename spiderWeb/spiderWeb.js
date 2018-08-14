@@ -69,6 +69,15 @@
         title: {text: config.chartName},
         xAxis: {
           categories: xCategories,
+          tickmarkPlacement: 'on',
+          lineWidth: 0,
+          labels: {
+              style: {
+                  color: '#2A333C',
+                  fontSize: '14px',
+                  font: 'open-sans'
+              }
+          }
         },
         yAxis: {
           gridLineInterpolation: 'polygon',
@@ -76,7 +85,7 @@
           max: 1,
           tickInterval: 0.25,
           labels: {
-               formatter: function() {return 100*this.value+"%";},
+               format: '{value}'
           },
           gridLineColor: '#2A333C'
         },
