@@ -54,7 +54,17 @@
         },
         chart: {
           polar: true,
-          type: 'line'
+          type: 'line',
+          backgroundColor: {
+            linearGradient: { x1: 0, y1: 0, x2: 1, y2: 1 },
+            stops: [
+                [0, '#A0DEF5'],
+                [1, '#328CAD']
+            ]
+          },
+          style: {
+            fontFamily: 'helvetica'
+          }
         },
         title: {text: config.chartName},
         xAxis: {
