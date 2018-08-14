@@ -73,9 +73,12 @@
         yAxis: {
           gridLineInterpolation: 'polygon',
           min: 0,
+          max: 1,
+          tickInterval: 0.25,
           labels: {
-            format: '{value}'
+               formatter: function() {return 100*this.value+"%";},
           },
+          gridLineColor: '#2A333C'
         },
         tooltip: {
           shared: true,
