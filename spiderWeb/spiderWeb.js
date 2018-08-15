@@ -54,7 +54,7 @@
         },
         chart: {
           polar: true,
-          type: 'line',
+          type: 'area',
           backgroundColor: {
             linearGradient: { x1: 0, y1: 0, x2: 1, y2: 1 },
             stops: [
@@ -67,6 +67,9 @@
           }
         },
         title: {text: config.chartName},
+        pane: {
+            size: '70%'
+        },
         xAxis: {
           categories: xCategories,
           tickmarkPlacement: 'on',
