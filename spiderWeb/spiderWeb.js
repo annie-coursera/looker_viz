@@ -95,6 +95,17 @@
         tooltip: {
           shared: true,
         },
+        let avg_value=[];
+        for (var i = 0, max = data.length; i < max; i += 1) {
+            avg_value.push(50);
+        }
+        series.push({
+            name: 'Avg Value',
+            data: avg_value,
+            pointPlacement: 'on',
+            fillOpacity: 0.0001,
+            lineColor: 'red'
+        })
         series: series,
       }
       let myChart = Highcharts.chart(element, options);
