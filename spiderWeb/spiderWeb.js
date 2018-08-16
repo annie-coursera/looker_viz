@@ -95,7 +95,7 @@
         tooltip: {
           shared: true,
         },
-        let avg_value=[];
+        let avg_value= new Array();
         for (var i = 0, max = data.length; i < max; i += 1) {
             avg_value.push(50);
         }
