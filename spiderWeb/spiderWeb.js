@@ -39,6 +39,19 @@
           data: data.map(function(row) {
             return row[m.name].value
           }),
+          color: '#FF9F00',
+          fillColor: {
+                linearGradient: {
+                    x1: 0,
+                    y1: 0,
+                    x2: 0,
+                    y2: 1
+                },
+                stops: [
+                    [0, '#FFC057'],
+                    [1, '#ED7C00']
+                ]
+            },
           tooltip: {
             pointFormatter: function() {
               return `<span style="color:${this.series.color}">${this.series.name}: <b>${format(this.y)}</b><br/>`
