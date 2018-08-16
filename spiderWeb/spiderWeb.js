@@ -46,7 +46,17 @@
           },
         }
       })
-
+      let avg_value= new Array();
+      for (var i = 0, max = data.length; i < max; i += 1) {
+            avg_value.push(50);
+      }
+      series.push({
+          name: 'Avg Value',
+          data: avg_value,
+          pointPlacement: 'on',
+          fillOpacity: 0.0001,
+          lineColor: 'red'
+      })
       let options = {
         colors: config.color_range,
         credits: {
@@ -85,8 +95,7 @@
         yAxis: {
           gridLineInterpolation: 'polygon',
           min: 0,
-          max: 1,
-          tickInterval: 0.25,
+          max: 100,
           labels: {
                format: '{value}'
           },
@@ -95,17 +104,6 @@
         tooltip: {
           shared: true,
         },
-        let avg_value= new Array();
-        for (var i = 0, max = data.length; i < max; i += 1) {
-            avg_value.push(50);
-        }
-        series.push({
-            name: 'Avg Value',
-            data: avg_value,
-            pointPlacement: 'on',
-            fillOpacity: 0.0001,
-            lineColor: 'red'
-        })
         series: series,
       }
       let myChart = Highcharts.chart(element, options);
