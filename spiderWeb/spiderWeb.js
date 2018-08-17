@@ -68,7 +68,8 @@
           data: avg_value,
           pointPlacement: 'on',
           fillOpacity: 0.0001,
-          lineColor: '#33C68A'
+          lineColor: '#2A7E9D',
+          color: '#2A7E9D'
       })
       let options = {
         colors: config.color_range,
