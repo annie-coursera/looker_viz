@@ -92,7 +92,7 @@
         },
         title: {text: config.chartName},
         pane: {
-            size: '70%'
+            size: '90%'
         },
         xAxis: {
           categories: xCategories,
