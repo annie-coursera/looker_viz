@@ -68,7 +68,7 @@
           data: avg_value,
           pointPlacement: 'on',
           fillOpacity: 0.0001,
-          lineColor: 'red'
+          lineColor: '#33C68A'
       })
       let options = {
         colors: config.color_range,
@@ -100,9 +100,10 @@
           labels: {
               style: {
                   color: '#2A333C',
-                  fontSize: '14px',
+                  fontSize: '23px',
                   font: 'open-sans'
-              }
+              },
+            offset: -100
           }
         },
         yAxis: {
